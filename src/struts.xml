@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+"http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<!-- START SNIPPET: xworkSample -->
+<struts>
+<package name="tutorial" extends="struts-default" namespace="/">
+
+        <action name="searchauthor" class="tutorial.searchauthor">
+            <result name="SUCCESS">/searchauthor.jsp</result>
+            <result name="FAILED">/failed.jsp</result>
+</action>
+        <action name="show" class="tutorial.show">
+            <result name="SUCCESS">/show.jsp</result>
+            <result name="FAILED">/failed.jsp</result>
+</action>
+        <action name="delete" class="tutorial.delete">
+            <result name="SUCCESS">/success.jsp</result>
+            <result name="FAILED">/failed.jsp</result>
+</action>
+<action name="edit" class="tutorial.edit">
+            <result name="SUCCESS">/success.jsp</result>
+            <result name="FAILED">/failed.jsp</result>
+             <result name="ADD">/addauthor.jsp</result>
+</action>
+<action name="addbook" class="tutorial.addbook">
+            <result name="SUCCESS">/success.jsp</result>
+            <result name="FAILED">/failed.jsp</result>
+             <result name="ADD">/addauthor.jsp</result>
+</action>
+<action name="addauthor" class="tutorial.addauthor">
+            <result name="SUCCESS">/successo.jsp</result>
+            <result name="FAILED">/failed.jsp</result>
+</action>
+<action name="books" class="tutorial.books">
+            <result name="SUCCESS">/books.jsp</result>
+</action>
+</package>
+
+</struts>
+
+<!-- END SNIPPET: xworkSample -->
